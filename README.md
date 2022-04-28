@@ -37,15 +37,17 @@ The following parameters are supported
 - `nFFT` : Size of the FFT/DFT as an `Int` (e.g 1024)
 - `avg` : averaging factor for PSD computation  as an `Int` (e.g 12)
 - `canvas` : Canvas used to display. Can be AsciiCanvas, DotCanvas or BlockCanvas (see UnicodePlots.jl documentation)
+- `width` and `heigth` to control the size of the plot. ❗️These parameters can help to have a proper visualisation but be sure that the terminal you are working on is larger than setup size (otherwise graphic issues will occur) 
 - `kwargs...` : All arguments supported by AbstractSDRs to open configure and monitor radio devices
 ### Controls 
 It is possible to change the magnitude axis during acquisition to zoom in/out and to shift the center magnitude. By default the plot is centered around 0dB and have 120dB dynamic.
 By pressing different keys we can:
-- `UP` arrow to shit the center limit up 
-- `DOWN` arrow to shift the center  down
-- `LEFT` arrow to zoom out (increase range)
-- `RIGHT` arrow to decrease range of ylims (zoom in)
+- `UP arrow` to shit the center limit up 
+- `DOWN arrow` to shift the center  down
+- `LEFT arrow` to zoom out (increase range)
+- `RIGHT arrow` to decrease range of ylims (zoom in)
 Note that it is not possible to change radio parameters during runtime.
+
 
 
 ## Example 
