@@ -70,18 +70,17 @@ function main(sdr,carrierFreq::Number,samplingRate::Number,gain::Number;nFFT=102
     # Core processing unit
     processing! = clojure_processing(nFFT,avg)
     doPlot      = clojure_doPlot(samplingRate,nFFT,heigth,width,canvas,carrierFreq)
+    # Setting limits
     global currLims
     reset(currLims)
-
-
-    # ----------------------------------------------------
-    # --- Canvas 
-    # ---------------------------------------------------- 
-
-    # --- Into to user
+    # --- Intro to user
     run(`clear`)
     @info "Compute ASCII DFT use <c-c> to interrupt"
 
+    
+    # ----------------------------------------------------
+    # --- Core processing
+    # ---------------------------------------------------- 
     try 
         while(true)
             # Get samples 
@@ -165,7 +164,7 @@ function clojure_doPlot(samplingRate,nFFT,heigth,width,canvas,carrierFreq)
         # Clear figure 
         println("\33[H")
         # New figure
-        plt = lineplot(xAx,out,label="",symbols="|",ylim=lims,heigth=heigth,width=width,canvas=canvas,xlabel="Frequency [MHz]",ylabel="Magnitude [dB]",title="Spectrum @ $(carrierFreq/1e6) MHz" )
+        plt = lineplot(xAx,out,label="",ylim=lims,heigth=heigth,width=width,canvas=canvas,xlabel="Frequency [MHz]",ylabel="Magnitude [dB]",title="Spectrum @ $(carrierFreq/1e6) MHz" )
         display(plt)
     end
     return doPlot
