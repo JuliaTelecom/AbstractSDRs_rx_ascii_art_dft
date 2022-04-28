@@ -1,4 +1,4 @@
-using AbstractSDRs_asci_art_dft
+using AbstractSDRs_rx_asci_art_dft
 using Test
 
 # @testset "AbstractSDRs_asci_art_dft.jl" begin

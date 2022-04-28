@@ -1,4 +1,4 @@
-module AbstractSDRs_asci_art_dft
+module AbstractSDRs_rx_asci_art_dft
 
 # ----------------------------------------------------
 # --- Dependencies 
