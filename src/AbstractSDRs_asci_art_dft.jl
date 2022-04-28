@@ -89,7 +89,6 @@ function main(sdr,carrierFreq::Number,samplingRate::Number,gain::Number;nFFT=102
             # Processing 
             processing!(out,buff)
             # Plot 
-            global OUT = out
             plt = doPlot(out)
             # User control 
             userControl()
@@ -108,6 +107,7 @@ end
 """ Function for user control to update the ylims and exit
 """
 function userControl()
+    # Inspect stdin
     b = bytesavailable(stdin)
     if b > 0
         data = read(stdin, b)
@@ -167,7 +167,6 @@ function clojure_doPlot(samplingRate,nFFT,heigth,width,canvas,carrierFreq)
         # New figure
         plt = lineplot(xAx,out,label="",symbols="|",ylim=lims,heigth=heigth,width=width,canvas=canvas,xlabel="Frequency [MHz]",ylabel="Magnitude [dB]",title="Spectrum @ $(carrierFreq/1e6) MHz" )
         display(plt)
-        # @show lims
     end
     return doPlot
 end

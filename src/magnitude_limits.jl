@@ -2,8 +2,8 @@
 # --- Limit managment 
 # ---------------------------------------------------- 
 mutable struct CurrLims
-    center::Float64;
-    range::Float64;
+    center::Float64;        # Position of the center of the magnitude 
+    range::Float64;         # Range between center and max (and min, respectively). Note that the total range is this 2range
 end
 # By default, spectrum is centered in 0 with 120dB dynamic
 currLims = CurrLims(0,60)
