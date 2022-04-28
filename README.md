@@ -1,4 +1,4 @@
-# AbstractSDRs_asci_art_dft
+# AbstractSDRs_rx_ascii_art_dft
 
 ## Objective
 
@@ -13,7 +13,7 @@ It is very similar to the GnuRadio tool `rx_ascii_art_dft` and has a similar API
 Simply add the package from the Julia Package Manager 
 
 
-        ] add AbstractSDRs_asci_art_dft
+        ] add AbstractSDRs_rx_ascii_art_dft
 
 
 

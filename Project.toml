@@ -1,4 +1,4 @@
-name = "AbstractSDRs_asci_art_dft"
+name = "AbstractSDRs_rx_asci_art_dft"
 uuid = "6b81e7ba-832b-43c9-bb51-2e30242560d3"
 authors = ["Robin Gerzaguet <robin.gerzaguet@irisa.fr> and contributors"]
 version = "0.1.0"
