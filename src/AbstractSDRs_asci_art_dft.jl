@@ -35,9 +35,9 @@ AbstractSDRs_asci_art_dft.main(sdr,carrierFreq,samplingRate,gain;nFFT=1024,avg,c
 - nFFT : Size of the FFT/DFT as an `Int` (e.g 1024)
 - averaging factor for PSD computation  as an `Int` (e.g 12)
 - canvas : Canvas used to display. Can be AsciiCanvas, DotCanvas or BlockCanvas (see UnicodePlots.jl documentation)
-- kwargs... : All argument supported by AbstractSDRs to open configure and monitor radio devices
+- kwargs... : All arguments supported by AbstractSDRs to open configure and monitor radio devices
 # Controls 
-It is possible to change the magnitude axis during acquisition to zoom in/out and to shift the center mangitude. By default the plot is centered around 0dB and have 120dB dynamic.
+It is possible to change the magnitude axis during acquisition to zoom in/out and to shift the center magnitude. By default the plot is centered around 0dB and have 120dB dynamic.
 By pressing different keys we can:
 - UP arrow to shit  the center limit up 
 - DOWN arrow to shift the center  down
