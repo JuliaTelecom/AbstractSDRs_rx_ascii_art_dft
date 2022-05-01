@@ -1,7 +1,7 @@
-using AbstractSDRs_rx_asci_art_dft
+using AbstractSDRs_rx_ascii_art_dft
 using Test
 
-# @testset "AbstractSDRs_asci_art_dft.jl" begin
+# @testset "AbstractSDRs_ascii_art_dft.jl" begin
     # # Write your tests here.
 # end
 
@@ -18,4 +18,4 @@ f = range(-samplingRate/2,samplingRate/2,length=N)
 
 sig = 1*exp.(2im*π .* f ./ samplingRate .* (0:N-1))
 
-AbstractSDRs_asci_art_dft.main(:radiosim,carrierFreq,samplingRate,gain;buffer=sig,avg=1,canvas=BlockCanvas)
+AbstractSDRs_ascii_art_dft.main(:radiosim,carrierFreq,samplingRate,gain;buffer=sig,avg=1,canvas=BlockCanvas)

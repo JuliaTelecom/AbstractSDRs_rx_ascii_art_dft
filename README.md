@@ -24,7 +24,7 @@ No functions are exported and the spcetrum can be obtained with the following co
 
 
 
-        AbstractSDRs_asci_art_dft.main(sdr,carrierFreq,samplingRate,gain;nFFT=1024,avg=1)
+        AbstractSDRs_ascii_art_dft.main(sdr,carrierFreq,samplingRate,gain;nFFT=1024,avg=1)
 
 The following parameters are supported 
 
@@ -55,7 +55,7 @@ Note that it is not possible to change radio parameters during runtime.
 Assuming we have an SDR from Ettus research (known as `:uhd` in AbstractSDRs), with the IP address "192.168.10.11" and we want to compute the PSD with some averaging ratio (256) and we want to inspect the spectrum @ 780MHz to see any communications 
 
 
-        AbstractSDRs_asci_art_dft.main(:uhd,780e6,4e6,30;avg=256,args="addr=192.168.10.11")
+        AbstractSDRs_ascii_art_dft.main(:uhd,780e6,4e6,30;avg=256,args="addr=192.168.10.11")
 
 and we can observe the following result 
 

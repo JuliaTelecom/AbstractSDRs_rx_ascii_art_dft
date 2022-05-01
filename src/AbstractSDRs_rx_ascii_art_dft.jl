@@ -1,4 +1,4 @@
-module AbstractSDRs_rx_asci_art_dft
+module AbstractSDRs_rx_ascii_art_dft
 
 # ----------------------------------------------------
 # --- Dependencies 
@@ -25,7 +25,7 @@ include("./magnitude_limits.jl")
 """ 
 Display the DFT with ACII art in the terminal, for a given SDR.
 Parameters are the one required to configure a SDR with AbstractSDRs. kwargs are `nFFT` the size of the FFT used and `kwargs...` all the keywords parameters required to configure the radio (see `openSDR` from AbstractSDRs for the supported keywords
-AbstractSDRs_asci_art_dft.main(sdr,carrierFreq,samplingRate,gain;nFFT=1024,avg,canvas,kwargs...)
+AbstractSDRs_ascii_art_dft.main(sdr,carrierFreq,samplingRate,gain;nFFT=1024,avg,canvas,kwargs...)
 # Input parameters 
 - sdr : SDR type supported by AbstractSDRs (for instance :uhd). A symbol is expected 
 - carrierFreq : Carrier Freq in Hz (e.g 2400e6)
