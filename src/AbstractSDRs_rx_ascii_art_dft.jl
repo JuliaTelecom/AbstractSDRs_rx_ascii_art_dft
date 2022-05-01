@@ -92,7 +92,7 @@ function main(sdr,carrierFreq::Number,samplingRate::Number,gain::Number;nFFT=102
             # User control 
             userControl()
             # Allow scheduling
-            sleep(0.1)
+            # sleep(0.1)
         end
     catch exception 
         println("\33[H")
