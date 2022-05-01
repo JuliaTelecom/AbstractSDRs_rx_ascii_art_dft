@@ -20,7 +20,7 @@ Simply add the package from the Julia Package Manager
 ## Use 
 
 The package relies on both AbstractSDRs for SDR management and UnicodePlots for the REPL rendering.
-No functions are exported and the spcetrum can be obtained with the following command 
+No functions are exported and the spectrum can be obtained with the following command 
 
 
 
@@ -46,7 +46,12 @@ By pressing different keys we can:
 - `DOWN arrow` to shift the center  down
 - `LEFT arrow` to zoom out (increase range)
 - `RIGHT arrow` to decrease range of ylims (zoom in)
-Note that it is not possible to change radio parameters during runtime.
+
+
+Note that it is not possible to change radio parameters during runtime such as carrier frequency of sampling Rate. 
+
+
+Any PR are welcome 👍
 
 
 
